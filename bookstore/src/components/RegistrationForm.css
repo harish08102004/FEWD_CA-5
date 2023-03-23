@@ -1,0 +1,123 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.inputBox{
+  width: 490px;
+  height:40px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  color: #eb6c6c;
+  padding-left: 10px;
+}
+
+
+.inputBox:focus{
+  border-color: #eb6c6c;
+  box-shadow: 0px 0px 8px #eb6c6c;
+}
+
+.page{
+  background-color: rgb(0, 0, 0);
+  padding: 0;
+  height: 100vh;
+  margin-top: 0px;
+}
+
+p{
+  color: white;
+}
+
+h1{
+  margin-top: 0px;
+  padding-top: 70px;
+  color: white;
+  margin-left: 710px;
+}
+
+#registerButton{
+  margin-right: 30px;
+  margin-top: 10px;
+  background-color: #ef1f1f; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+
+#HomepageButton{
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+  background-color: #ef1f1f; /* Green */
+  border: none;
+  color: white;
+  height: 70px;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  bottom: 99px;
+  
+}
+
+#message{
+  color: rgb(250, 60, 60);
+  margin-bottom: opx;
+  margin-left: 760px;
+  margin-top:80px;  
+}
+
+@media only screen and (max-width: 767px) {
+  .form {
+    margin-top: 30px;
+  }
+  
+  .inputBox {
+    width: 90%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  h1 {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  #registerButton,
+  #HomepageButton {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+  }
+  
+  #HomepageButton {
+    bottom: 0;
+  }
+  
+  #message {
+    margin-left: 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+}
