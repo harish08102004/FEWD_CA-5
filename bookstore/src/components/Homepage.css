@@ -6,6 +6,7 @@
 
 .mainpage{
     background-color: black;
+    width: 206vh;
     height: 100vh;
 }
 
@@ -24,7 +25,7 @@
   }
   
 .Books img {
-    width: 170px;
+    width: 150px;
     height: 300px;
     object-fit: cover;
     margin-bottom: 10px;
@@ -60,14 +61,14 @@ button.button:hover {
 }
 
 #searchbox{
-    margin-top: 60px;
+    margin-top: 0px;
     width: 450px;
     padding: 10px;
     border-radius: 5px;
     border: 2px solid #ccc;
     font-size: 16px;
     outline: none;
-    margin-left: 600px;
+    margin-left: 550px;
   }
   
 #searchbox:focus {
@@ -97,49 +98,10 @@ h3{
 }
   
 .results{
-    margin-top: 75px;
+    margin-top: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: xx-large;
     color: white;
-    margin-left: 700px;
+    margin-left: 650px;
 }
 
-
-/* For screens smaller than 600px */
-@media (max-width: 600px) {
-  .Books div {
-    margin: 10px;
-  }
-  
-  .Books img {
-    width: 120px;
-    height: 200px;
-  }
-
-  .mainpage{
-    background-color: black;
-    height: 200vh;
-}
-  
-  #searchbox{
-    width: 80%;
-    margin-left: 15px;
-  }
-  
-  .results{
-    margin-left: 20px;
-    margin-top: 30px;
-    font-size: x-large;
-  }
-  
-  .logo{
-    margin-left: 10px;
-    margin-top: 5px;
-  }
-  
-  button.button {
-    margin-right: 20px;
-    margin-top: 5px;
-    font-size: 14px;
-  }
-}

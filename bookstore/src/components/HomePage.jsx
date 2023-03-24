@@ -1,17 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Homepage.css";
-import { Link, useParams ,  } from "react-router-dom";
+import { Link, } from "react-router-dom";
 
 
 function BooksPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [books, setBooks] = useState([]);
   const [result, setResult] = useState("");
-  const [loggedIn, setLoggedIn] = useState(false);
-  const user = useParams()
-  // const location = useLocation();
-  // const username=location.state
  
   useEffect(() => {
     axios
@@ -45,11 +41,6 @@ function BooksPage() {
     }
   };
 
-  const handleLogin = () => {
-    setLoggedIn(true);
-    console.log(loggedIn)
-  };
-
 
   return (
     <div className="mainpage">
@@ -59,18 +50,12 @@ function BooksPage() {
           src="https://kalvium.com/wp-content/uploads/2022/07/Logo-nav.png"
           alt=""
         />
-        {loggedIn ? (
-          <button className="button">
-            {user}
-          </button>
-        ) : (
           <Link to="/register">
-          <button className="button" onClick={handleLogin}>
+          <button className="button">
            Register 
           </button>
           </Link>
-         
-        )}
+          
       </div>
       <input
         id="searchbox"
