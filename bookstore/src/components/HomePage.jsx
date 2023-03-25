@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Homepage.css";
-import { Link, } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 function BooksPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [books, setBooks] = useState([]);
   const [result, setResult] = useState("");
- 
+
   useEffect(() => {
     axios
       .get("https://reactnd-books-api.udacity.com/books", {
@@ -41,7 +40,6 @@ function BooksPage() {
     }
   };
 
-
   return (
     <div className="mainpage">
       <div className="header">
@@ -50,12 +48,9 @@ function BooksPage() {
           src="https://kalvium.com/wp-content/uploads/2022/07/Logo-nav.png"
           alt=""
         />
-          <Link to="/register">
-          <button className="button">
-           Register 
-          </button>
-          </Link>
-          
+        <Link to="/register">
+          <button className="button">Register</button>
+        </Link>
       </div>
       <input
         id="searchbox"
@@ -64,8 +59,8 @@ function BooksPage() {
         value={searchTerm}
         onChange={handleInputChange}
       />
-      
-      <p className="results" >{result}</p>
+
+      <p className="results">{result}</p>
       <div className="Books">
         {filteredData.map((item) => (
           <div>
